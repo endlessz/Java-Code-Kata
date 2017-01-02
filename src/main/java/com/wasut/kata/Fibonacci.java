@@ -8,6 +8,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class Fibonacci {
     public int calculate(int number){
-        return 0;
+        if(number <= 1){
+            return number;
+        }
+
+        return calculate(number - 1) + calculate(number - 2);
     }
 }
