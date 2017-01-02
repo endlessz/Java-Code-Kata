@@ -1,4 +1,4 @@
-package com.wasut.kata;
+package com.wasut.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
