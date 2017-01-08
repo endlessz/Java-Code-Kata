@@ -2,6 +2,9 @@ package com.wasut.kata.projecteuler;
 
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Wasut on 8/1/2560.
  *
@@ -10,6 +13,22 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class Multiples3or5 {
+
+    public int sumNumber(List<Integer> list){
+        return list.stream().mapToInt(Integer::intValue).sum();
+    }
+
+    public List<Integer> findMultiples3or5Below(int number){
+        List<Integer> answers = new ArrayList<>();
+
+        for (int i = 3; i < number; i++){
+            if(isMultiple3or5(i)){
+                answers.add(i);
+            }
+        }
+
+        return answers;
+    }
 
     public boolean isMultiple3or5(int number){
         if(number % 3 == 0 || number % 5 == 0){
