@@ -18,23 +18,23 @@ public class PrimeNumberTest {
 
     @Test
     public void correctPrime(){
-        Assert.assertEquals(true, primeNumber.isPrime(2));
-        Assert.assertEquals(true, primeNumber.isPrime(3));
-        Assert.assertEquals(true, primeNumber.isPrime(5));
-        Assert.assertEquals(true, primeNumber.isPrime(23));
-        Assert.assertEquals(true, primeNumber.isPrime(29));
-        Assert.assertEquals(true, primeNumber.isPrime(47));
-        Assert.assertEquals(true, primeNumber.isPrime(101));
+        Assert.assertEquals(true, primeNumber.isPrime(2L));
+        Assert.assertEquals(true, primeNumber.isPrime(3L));
+        Assert.assertEquals(true, primeNumber.isPrime(5L));
+        Assert.assertEquals(true, primeNumber.isPrime(23L));
+        Assert.assertEquals(true, primeNumber.isPrime(29L));
+        Assert.assertEquals(true, primeNumber.isPrime(47L));
+        Assert.assertEquals(true, primeNumber.isPrime(101L));
     }
 
     @Test
     public void wrongPrime(){
-        Assert.assertEquals(false, primeNumber.isPrime(4));
-        Assert.assertEquals(false, primeNumber.isPrime(6));
-        Assert.assertEquals(false, primeNumber.isPrime(10));
-        Assert.assertEquals(false, primeNumber.isPrime(100));
-        Assert.assertEquals(false, primeNumber.isPrime(250));
-        Assert.assertEquals(false, primeNumber.isPrime(375));
-        Assert.assertEquals(false, primeNumber.isPrime(44));
+        Assert.assertEquals(false, primeNumber.isPrime(4L));
+        Assert.assertEquals(false, primeNumber.isPrime(6L));
+        Assert.assertEquals(false, primeNumber.isPrime(10L));
+        Assert.assertEquals(false, primeNumber.isPrime(100L));
+        Assert.assertEquals(false, primeNumber.isPrime(250L));
+        Assert.assertEquals(false, primeNumber.isPrime(375L));
+        Assert.assertEquals(false, primeNumber.isPrime(44L));
     }
 }

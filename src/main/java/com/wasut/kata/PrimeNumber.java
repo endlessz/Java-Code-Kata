@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class PrimeNumber {
-    public boolean isPrime(int number){
+    public boolean isPrime(Long number){
         if(number <= 1){
             return false;
         }
