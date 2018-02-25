@@ -22,4 +22,8 @@ public class Palindrome {
 
         return text.equals(reverse);
     }
+
+    public boolean isPalindromeArray(String [] array) {
+        return this.isPalindrome(String.join(",", array));
+    }
 }

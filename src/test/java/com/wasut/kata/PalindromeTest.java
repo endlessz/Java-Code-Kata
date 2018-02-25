@@ -52,4 +52,16 @@ public class PalindromeTest {
         Assert.assertEquals(false, palindrome.isPalindromeByReverse("123"));
         Assert.assertEquals(false, palindrome.isPalindromeByReverse("world"));
     }
+
+    @Test
+    public void correctPalindromeArray(){
+        Assert.assertEquals(true, palindrome.isPalindromeArray(new String[]{"a", "b", "a"}));
+        Assert.assertEquals(true, palindrome.isPalindromeArray(new String[]{"x", "y", "x"}));
+    }
+
+    @Test
+    public void faliledPalindromeArray(){
+        Assert.assertFalse(palindrome.isPalindromeArray(new String[]{"a", "b", "c"}));
+        Assert.assertFalse(palindrome.isPalindromeArray(new String[]{"x", "y", "z"}));
+    }
 }
